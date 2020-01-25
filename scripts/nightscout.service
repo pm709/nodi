@@ -1,0 +1,17 @@
+[Unit]
+Description=Nightscout service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=nightscout
+ExecStart=ROOT_TO_CHANGED/scripts/start_nightscout.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nightscout
+
+[Install]
+WantedBy=multi-user.target
