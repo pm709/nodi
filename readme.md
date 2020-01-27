@@ -19,9 +19,9 @@ In file scripts/start_nightscout, be sure to change values of
   * CUSTOM_TITLE
   * API_SECRET
 
-If you want to use service like [autotuneweb](https://autotuneweb.azurewebsites.net/) then change the value of AUTH_DEFAULT_ROLES
+Do not forget to customize others nightscout variables if needed. For a full list of variables check https://github.com/nightscout/cgm-remote-monitor#environment
 
-For a full list of variables check https://github.com/nightscout/cgm-remote-monitor#environment
+If you want to use service like [autotuneweb](https://autotuneweb.azurewebsites.net/) then change the value of AUTH_DEFAULT_ROLES
 
 # Using NODI
 Once configuration is done, execute the bash script __./nodi.sh__ with root user
